@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Meters Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="energymeter.css"> 
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg fixed-top neon-header">
+  <div class="container-fluid position-relative">
+
+    <!-- Logo -->
+    <a class="logo" href="main.html">
+      <img src="Logo_For_Smart_Factor-removebg-preview.png"
+           alt="Smart Factory Logo"
+           class="logo-img">
+    </a>
+
+     <!-- Toggler -->
+    <button class="d-flex align-items-center ms-auto d-lg-none "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <!-- COLLAPSE MENU -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="products.html">
+                Products
+            </a>
+
+            <div class="dropdown-menu p-3">
+                <ul class="list-unstyled m-0">
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-box-seam fs-4 text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold white-text">Product One</h6>
+                            <p class="mb-0 small text-muted">
+                                Powerful solution designed to improve workflow efficiency.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-cpu fs-4 text-success"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Product Two</h6>
+                            <p class="mb-0 small text-muted">
+                                Smart automation tools for modern businesses.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex">
+                        <div class="me-3">
+                            <i class="bi bi-cloud fs-4 text-danger"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Product Three</h6>
+                            <p class="mb-0 small text-muted">
+                                Secure cloud-based platform for scaling operations.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#">
+                Services
+            </a>
+
+            <div class="dropdown-menu p-3">
+                <ul class="list-unstyled m-0">
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-gear fs-4 text-warning"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Consulting</h6>
+                            <p class="mb-0 small text-muted">
+                                Expert advice to optimize your business processes.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-bar-chart fs-4 text-info"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Analytics</h6>
+                            <p class="mb-0 small text-muted">
+                                Data-driven insights for better decision making.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex">
+                        <div class="me-3">
+                            <i class="bi bi-shield-check fs-4 text-success"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Security</h6>
+                            <p class="mb-0 small text-muted">
+                                Advanced protection solutions for digital assets.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#">
+                About
+            </a>
+
+            <div class="dropdown-menu p-3">
+                <ul class="list-unstyled m-0">
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-people fs-4 text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Our Team</h6>
+                            <p class="mb-0 small text-muted">
+                                Meet the talented professionals behind our success.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-building fs-4 text-secondary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Company</h6>
+                            <p class="mb-0 small text-muted">
+                                Learn more about our mission and vision.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex">
+                        <div class="me-3">
+                            <i class="bi bi-briefcase fs-4 text-danger"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Careers</h6>
+                            <p class="mb-0 small text-muted">
+                                Explore exciting opportunities to join our team.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link  text-white" href="#">
+                Partner
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link  text-white" href="#">
+                Pricing
+            </a>
+        </li>
+    </ul>
+        <!-- MOBILE BUTTONS -->
+        <div class="mobile-buttons text-center">
+          <button class="btn btn-outline-light me-2">Sign In</button>
+          <a href="#quote-section" class="btn-neon">Get Queue</a>
+        </div>
+    </div>
+    </div>
+            <div class="right-buttons">
+      <button class="btn btn-outline-light me-2">Sign In</button>
+      <a href="#quote-section" class="btn-neon">Get Queue</a>
+            </div>    
+    </div>
+    </nav>
+
+
+  <section class="energy-section">
+    <div class="container">
+      <h2>Energy Meters</h2>
+      <p>
+        Our advanced <span class="highlight">Energy Meters</span> provide accurate monitoring of electricity consumption for homes, industries, and commercial facilities. Designed for efficiency and reliability, these meters help reduce energy wastage, optimize power usage, and lower electricity bills. Equipped with real-time data tracking, multi-circuit monitoring, and smart connectivity options, our energy meters ensure seamless integration into smart energy management systems. Perfect for industrial automation, sustainable energy solutions, and IoT-enabled monitoring, these devices deliver precise insights for better decision-making and energy savings.
+      </p>
+    </div>
+  </section>
+
+
+  <div class="container my-5">
+    <h2 class="text-white mb-4">Types of Energy Meters</h2>
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="meter-card">
+          <img src="ADW-300W/P1.png" alt="Multi-function Energy Meter" class="img-fluid">
+          <div class="overlay">
+            <p>Measures voltage, current, power, and energy across multiple circuits.</p>
+          </div>
+          <h5 class="mt-2 text-center">Multi-function Energy Meter</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="meter-card">
+          <img src="ADW-300W/P2.png" alt="DC Power Meter" class="img-fluid">
+          <div class="overlay">
+            <p>DC power and energy meter designed to monitor and control DC systems.</p>
+          </div>
+          <h5 class="mt-2 text-center">DC Power Meter</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="meter-card">
+          <img src="ADL-400/1.png" alt="Wireless Energy Meter" class="img-fluid">
+          <div class="overlay">
+            <p>Wireless energy meter to remotely measure energy consumption.</p>
+          </div>
+          <h5 class="mt-2 text-center">Wireless Energy Meter</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="meter-card">
+          <img src="ADL-400/3.png" alt="Din Rail Energy Meter" class="img-fluid">
+          <div class="overlay">
+            <p>Compact DIN rail energy meter suitable for industrial panels.</p>
+          </div>
+          <h5 class="mt-2 text-center">Din Rail Energy Meter</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="meter-card">
+          <img src="ADL-400/4.png" alt="Multi Circuit Energy Meter" class="img-fluid">
+          <div class="overlay">
+            <p>Monitors multiple circuits simultaneously with individual readings.</p>
+          </div>
+          <h5 class="mt-2 text-center">Multi Circuit Energy Meter</h5>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="meter-card">
+          <img src="ADW-300W/p3.png" alt="Prepayment Energy Meter" class="img-fluid">
+          <div class="overlay">
+            <p>Prepayment meter allowing users to manage energy usage and payments.</p>
+          </div>
+          <h5 class=" mt-2 text-center">Prepayment Energy Meter</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  
+<section class="energy-section">
+  <div class="container">
+    
+    <div class="timeline">
+
+      <!-- ITEM 1 -->
+      <div class="timeline-item">
+        <div class="dot"></div>
+        <h2>Energy Meter Working Principle</h2>
+        <p>
+          Smart electric energy meters by some energy meter supplier use shunts or 
+          <span class="highlight">current transformers</span> to turn current signals into small signals that can be used for electronic measurement, 
+          and use different types of energy meters voltage dividers or voltage transformers to turn voltage signals into small signals that can be used 
+          for electronic measurement, and then use dedicated energy measurement. The chip converts analogue signals from voltage transformers 
+          and current transformers into digital signals, and performs digital integration operations on them, and then outputs a pulse signal whose 
+          frequency is proportional to the electrical energy. The pulse signal is sent to the microcomputer for processing and then displayed on 
+          the liquid crystal. This is the general power meter working principle and Acrel energy meter factory can provide you high-quality energy meters.
+        </p>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="timeline-item">
+        <div class="dot"></div>
+        <h2>Energy Meter Function</h2>
+        <p>
+          Display power, demand, voltage, current, power, time, remaining amount and other values, the number of display digits is not less than 8 digits, 
+          and the displayed decimal place can be set; the displayed value unit should adopt the national legal unit of measurement, such as kW, kvar, kWh, kvarh, V, A, etc.
+        </p>
+        <p>
+          Measure operating parameters such as total and split-phase active power, reactive power, power factor, split-phase voltage, split-phase current, frequency and so on.
+        </p>
+        <p>
+          Alarm functions include loss of voltage, loss of current, reverse sequence, overload, battery undervoltage, etc.
+        </p>
+        <p>
+          It has dual protection measures of programming switch and programming password to prevent unauthorized persons from performing programming operations.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+      <section class="energy-section">
+    <div class="container">
+      <h2>Applications of Energy Meters</h2>
+      <p>
+        Energy meters play a vital role in modern power management systems by accurately measuring electricity consumption in residential, commercial, and industrial applications. From smart homes and office buildings to manufacturing plants and renewable energy installations, energy meters help monitor real-time power usage, reduce energy costs, and improve efficiency. Advanced digital and smart energy meters support load analysis, peak demand monitoring, billing accuracy, and integration with solar power systems and smart grids. By enabling data-driven energy management, energy meters enhance operational performance, ensure regulatory compliance, and promote sustainable energy solutions for businesses and households alike.
+      </p>
+    </div>
+  </section>
+
+      <footer class="footer">
+  <div class="container">
+
+    <div class="row footer-top">
+
+      <div class="col-lg-3 col-md-12 mb-4">
+        <div class="footer-logo">
+            <img src="Logo_For_Smart_Factor-removebg-preview.png" alt="SmartFactory Logo" class="footer-logo-img">
+        </div>
+
+      </div>
+ 
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <h6>Highlights</h6>
+        <ul>
+          <li><a href="#">MVK Fusion</a></li>
+          <li><a class="active" href="#">IO-Link</a></li>
+          <li><a href="#">Cube67</a></li>
+          <li><a href="#">Power Connectors</a></li>
+          <li><a href="#">Network Technology</a></li>
+          <li><a href="#">Systems Engineering</a></li>
+        </ul>
+      </div>
+ 
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <h6>Company</h6>
+        <ul>
+          <li><a href="#">Corporate News</a></li>
+          <li><a href="#">Trade Shows & Events</a></li>
+          <li><a href="#">Supplier Management</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press Area</a></li>
+        </ul>
+      </div>
+ 
+      <div class="col-lg-3 col-md-12">
+        <h6>Contact</h6>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Worldwide</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Become a Sales Partner</a></li>
+        </ul>
+ 
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+
+    </div>
+ 
+    <div class="footer-bottom">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <a href="#">Imprint</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Legal</a>
+          <a href="#">Whistleblower System ↗</a>
+          <p>© 2026 Murrelektronik GmbH</p>
+        </div>
+
+        <div class="col-md-4 text-md-end">
+          <button id="toTop" class="to-top">
+            <i class="bi bi-arrow-up" ><a href="#" style="color: #00d9ff;">to top</a></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/main.js"></script>
+  <script src="JS/energymeter.js"></script>
+</body>
+</html>

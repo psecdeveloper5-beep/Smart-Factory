@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Factory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top neon-header">
+  <div class="container-fluid position-relative">
+
+    <!-- Logo -->
+    <a class="logo" href="#">
+      <img src="Logo_For_Smart_Factor-removebg-preview.png"
+           alt="Smart Factory Logo"
+           class="logo-img">
+    </a>
+
+     <!-- Toggler -->
+    <button class="d-flex align-items-center ms-auto d-lg-none "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <!-- COLLAPSE MENU -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav mx-auto text-center">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="products.html">
+                Products
+            </a>
+
+            <div class="dropdown-menu p-3">
+                <ul class="list-unstyled m-0">
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-lightning fs-3 text-success"></i>
+                        </div>
+                        <a href="energymeter.html" class="nav-txt">
+                        <div class="nav-list-btn">
+                            <h6 class=" mb-1 fw-bold white-text">Energy Meters</h6>
+                            <p class="mb-0 small text-muted">
+                                Powerful solution designed to improve workflow efficiency.
+                            </p>
+                        </div>
+                        </a>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-wind fs-3 text-primary"></i>
+                        </div>
+                        <a href="airflowmeter.html" class="nav-txt">
+                        <div>
+                            <h6 class="mb-1 fw-bold">Air Flow Meters</h6>
+                            <p class="mb-0 small text-muted">
+                                Smart automation tools for modern businesses.
+                            </p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex">
+                        <div class="me-3">
+                            <i class="bi bi-funnel fs-3 text-info"></i>
+                        </div>
+                        <a href="gasflowmeter.html" class="nav-txt">
+                        <div>
+                            <h6 class="mb-1 fw-bold">Gas Flow Meters</h6>
+                            <p class="mb-0 small text-muted">
+                                Secure cloud-based platform for scaling operations.
+                            </p>
+                        </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex">
+                        <div class="me-3">
+                            <i class="bi bi-robot fs-3 text-warning"></i>
+                        </div>
+                        <a href="solarcleaningrobots.html" class="nav-txt">
+                        <div>
+                            <h6 class="mb-1 fw-bold">Solar Cleaning Robots</h6>
+                            <p class="mb-0 small text-muted">
+                                Secure cloud-based platform for scaling operations.
+                            </p>
+                        </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex">
+                        <div class="me-3">
+                            <i class="bi bi-thermometer fs-3 text-danger"></i>
+                        </div>
+                        <a href="temperaturedevices.html" class="nav-txt">
+                        <div>
+                            <h6 class="mb-1 fw-bold">Temperature Devices</h6>
+                            <p class="mb-0 small text-muted">
+                                Secure cloud-based platform for scaling operations.
+                            </p>
+                        </a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#">
+                Services
+            </a>
+
+            <div class="dropdown-menu p-3">
+                <ul class="list-unstyled m-0">
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-gear fs-4 text-warning"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Consulting</h6>
+                            <p class="mb-0 small text-muted">
+                                Expert advice to optimize your business processes.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-bar-chart fs-4 text-info"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Analytics</h6>
+                            <p class="mb-0 small text-muted">
+                                Data-driven insights for better decision making.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex">
+                        <div class="me-3">
+                            <i class="bi bi-shield-check fs-4 text-success"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Security</h6>
+                            <p class="mb-0 small text-muted">
+                                Advanced protection solutions for digital assets.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#">
+                About
+            </a>
+
+            <div class="dropdown-menu p-3">
+                <ul class="list-unstyled m-0">
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-people fs-4 text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Our Team</h6>
+                            <p class="mb-0 small text-muted">
+                                Meet the talented professionals behind our success.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex mb-3">
+                        <div class="me-3">
+                            <i class="bi bi-building fs-4 text-secondary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Company</h6>
+                            <p class="mb-0 small text-muted">
+                                Learn more about our mission and vision.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown-item-custom d-flex">
+                        <div class="me-3">
+                            <i class="bi bi-briefcase fs-4 text-danger"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-1 fw-bold">Careers</h6>
+                            <p class="mb-0 small text-muted">
+                                Explore exciting opportunities to join our team.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link  text-white" href="#">
+                Partner
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link  text-white" href="#">
+                Pricing
+            </a>
+        </li>
+    </ul>
+        <!-- MOBILE BUTTONS -->
+        <div class="mobile-buttons text-center">
+          <button class="btn btn-outline-light me-2">Sign In</button>
+          <a href="#quote-section" class="btn-neon">Get Queue</a>
+        </div>
+    </div>
+    </div>
+            <div class="right-buttons">
+      <button class="btn btn-outline-light me-2">Sign In</button>
+      <a href="#quote-section" class="btn-neon">Get Queue</a>
+            </div>    
+    </div>
+    </nav>
+
+    <section class="container ">
+        <h1 class="">Welcome To</h1>
+        <h1 class="heading_color">Our Platform</h1>
+        <p>This content is just for testing the fixed header.</p>
+    </section>
+     
+    <div class="vd my-4">
+    <div class="image-container">
+        <img src="img1.jpg" alt="Main Image" class="single-image">
+        
+        <div class="overlay-text">
+            <h2>Animated Heading</h2>
+            <p>This is some descriptive text over the image with animation.</p>
+
+            <!-- NEW BUTTON -->
+            <a href="#quote-section" class="overlay-btn">Get Queue</a>
+        </div>
+    </div>
+    </div>
+
+    <section class="logo-section py-9">
+    <div class="container text-center">
+        <h5 class="text-light mb-4">
+            Trusted choice by manufacturers worldwide
+        </h5>
+
+        <div class="logo-slider">
+            <div class="logo-track" id="logoTrack">
+                <div class="logo-item"><img src="altas_logo-removebg-preview.png" class="img-fluid" alt=""></div>
+                <div class="logo-item"><img src="honda_logo-removebg-preview.png" class="img-fluid" alt=""></div>
+                <div class="logo-item"><img src="altas_logo-removebg-preview.png" class="img-fluid" alt=""></div>
+                <div class="logo-item"><img src="honda_logo-removebg-preview.png" class="img-fluid" alt=""></div>
+                <div class="logo-item"><img src="altas_logo-removebg-preview.png" class="img-fluid" alt=""></div>
+                <div class="logo-item"><img src="honda_logo-removebg-preview.png" class="img-fluid" alt=""></div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="info-section py-5">
+    <div class="container">
+        <div class="row justify-content-center g-4">
+            <div class="col-12 col-md-5 col-lg-4">
+                <div class="info-card h-10">
+                    <div class="d-flex align-items-center mb-3">
+                        <h2 class="me-3 mb-0 rating-number">4.8</h2>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                    </div>
+
+                    <p class="mb-1 text-light">
+                        rating based on
+                    </p>
+                    <p class="highlight">
+                        4.9 rated customer service you can rely on
+                    </p>
+
+                    <a href="#" class="card-link">
+                        Read more from Capterra
+                        <span class="arrow-circle">›</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-5 col-lg-4">
+                <div class="info-card h-100 text-center">
+                    <div class="mb-3">
+                        <i class="bi bi-shield-check shield-icon"></i>
+                    </div>
+
+                    <p class="text-light mb-2">
+                        Your data is secured with
+                    </p>
+
+                    <h5 class="fw-bold text-white">
+                        ISO 27001 System Certification
+                    </h5>
+
+                    <a href="#" class="card-link mt-3 d-inline-block">
+                        Learn more
+                        <span class="arrow-circle" style="color:black;">›</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section> 
+
+    <section class="">
+    <div class="container text-center">
+        <div class="feature-badge mb-4  text-white">
+            Software Features
+        </div>
+        <h1 class="feature-heading">
+            <span class="text-green">OEE</span> <span style="color: white;">software. Easy to</span> 
+            <span class="text-green">use.</span><br>
+            <span style="color: white;">Easy to</span> <span class="text-green">understand.</span>
+        </h1>
+        <p class="feature-subtext mt-4 " >
+            Evocon gives your team all the OEE (Overall Equipment Effectiveness)
+            software tools they need to understand and improve the production process.
+        </p>
+
+    </div>
+    </section>
+
+    <div class="main-wrapper">
+        <div class="content">
+            <div class="left-container">
+
+            <div class="left-box" data-img="1">
+                <h5 class="points-color">01 Shift View</h5>
+                <h2 class="feature-subtext">Monitor production shifts in real-time</h2>
+                <p class="feature-subtext">
+                    Track and analyze performance across dates, stations,
+                    factories and countries.
+                </p>
+                <a href="#" class="learn-link">Learn more →</a>
+            </div>
+
+            <div class="left-box" data-img="2">
+                <h5  class="points-color">02 Dashboard</h5>
+                <h2 class="feature-subtext">Empower teams with an OEE Dashboard</h2>
+                <p class="feature-subtext">
+                    Transform production data into clear,
+                    actionable insights.
+                </p>
+                <a href="#" class="learn-link">Learn more →</a>
+            </div>
+
+            <div class="left-box" data-img="3">
+                <h5  class="points-color">03 Reports</h5>
+                <h2 class="feature-subtext">Advanced Reporting Tools</h2>
+                <p class="feature-subtext">
+                    Generate real-time performance reports
+                    in just seconds.
+                </p>
+                <a href="#" class="learn-link">Learn more →</a>
+            </div>
+
+            <div class="left-box" data-img="4">
+                <h5  class="points-color">04 Alerts</h5>
+                <h2 class="feature-subtext">Smart Notifications</h2>
+                <p class="feature-subtext">
+                    Receive downtime and performance alerts instantly.
+                </p>
+                <a href="#" class="learn-link">Learn more →</a>
+            </div>
+
+            <div class="left-box" data-img="5">
+                <h5  class="points-color">05 Analytics</h5>
+                <h2 class="feature-subtext">Deep Production Analytics</h2>
+                <p class="feature-subtext">
+                    Make data-driven decisions with
+                    detailed analytics dashboards.
+                </p>
+                <a href="#" class="learn-link">Learn more →</a>
+            </div>
+
+            </div>
+        
+            <div class="right-container position-relative">
+
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+                class="preview-img active" id="img1">
+
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop"
+                class="preview-img" id="img2">
+
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+                class="preview-img" id="img3">
+
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
+                class="preview-img" id="img4">
+
+            <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1200&auto=format&fit=crop"
+                class="preview-img" id="img5">
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <section class="">
+    <div class="container text-center">
+        <div class="feature-badge mb-4  text-white">
+            Benefits
+        </div>
+        <h1 class="feature-heading">
+            <span style="color: white;">We help you</span> 
+            <span class="text-green">better your world</span>
+            <span style="color: white;">.</span> 
+        </h1>
+        <p class="feature-subtext mt-4 " >
+            You should not tackle inefficiency alone. We help bring transparency into your production process so you can make the right decisions.
+        </p>
+
+    </div>
+    </section>
+
+    <section class="features-section py-5">
+        <div class="container-fluid px-lg-5">
+            <div class="row g-4">
+
+              <!-- BIG LEFT CARD -->
+              <div class="col-lg-6">
+        <div class="feature-card h-100">
+          <div class="icon orange">📊</div>
+          <h4>Track machine downtime</h4>
+          <p>Clearly understand how much downtime you have and why and what are the improvement areas.</p>
+
+          <div class="chart-box mt-4">
+            <img src="Track machine downtime.webp"
+                 class="img-fluid rounded" alt="Downtime Chart">
+          </div>
+        </div>
+              </div>
+
+              <!-- RIGHT COLUMN -->
+              <div class="col-lg-6">
+                <div class="row g-4">
+
+                  <div class="col-md-8">
+            <div class="feature-card h-100">
+              <div class="icon yellow">🔔</div>
+              <h4>Get insight into production performance in real-time</h4>
+              <p>Understand how your production process is performing against expectations.</p>
+            </div>
+                  </div>
+
+                  <div class="col-md-4">
+            <div class="feature-card h-100">
+              <div class="icon green">🎓</div>
+              <h4>Create a platform for change</h4>
+              <p>Tools you need to initiate and sustain cultural change.</p>
+            </div>
+                  </div>
+
+                  <div class="col-md-4">
+            <div class="feature-card h-100">
+              <div class="icon yellow">😊</div>
+              <h4>Engage operators with their work</h4>
+              <p>By giving visual feedback to your operators, you increase productivity and enhance communication.</p>
+            </div>
+                  </div>
+
+                  <div class="col-md-8">
+            <div class="feature-card h-100">
+              <div class="icon blue">⚙️</div>
+              <h4>Automate data collection</h4>
+              <p>Replace pen & paper with a reliable and accurate system.</p>
+
+              <img src="Automate data collection.png"
+                   class="img-fluid mt-3 rounded" alt="Device">
+            </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="container text-center">
+        <h5 class="text-light mb-4">
+            Trusted choice by manufacturers worldwide
+        </h5>
+    </div>
+
+    <section class="slider-section">
+        <div class="container-fluid p-0">
+
+            <div class="slider-wrapper">
+
+                <div class="slide">
+                    <img src="img-1.jpeg" class="img-fluid">
+                </div>
+
+                <div class="slide">
+                    <img src="img-2.webp" class="img-fluid">
+                </div>
+
+                <div class="slide">
+                    <img src="img-3.avif" class="img-fluid">
+                </div>
+
+                <div class="slide">
+                    <img src="img-4.jpg" class="img-fluid">
+                </div>
+
+                <div class="slide">
+                    <img src="img-5.webp" class="img-fluid">
+                </div>
+
+                <button class="nav-btn prev-btn">&#10094;</button>
+                <button class="nav-btn next-btn">&#10095;</button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <br>
+
+    <section class="">
+        <div class="container text-center">
+            <div class="feature-badge mb-4  text-white">
+                How it works
+            </div>
+            <h1 class="feature-heading">
+                <span style="color: white;">Kickstart your</span> 
+                <span class="text-green">digital transformation</span>
+                <span style="color: white;">with Smart Factory Solution</span>
+            </h1>
+            <p class="feature-subtext mt-4 " >
+                With our plug'n'play system it takes only a few days to implement Smart Factory Solution and start your Industry 4.0 journey.
+            </p>
+
+        </div>
+    </section>
+    
+    <section class="device-section">
+    
+        <div class="container">
+
+        <div class="device-wrapper">
+            <div class="status-box slow-speed" id="slowBox">
+                <div class="dot yellow1"></div>
+                Slow speed
+            </div>
+            <div class="status-box breakdown" id="breakBox">
+                <div class="dot red2"></div>
+                Breakdown
+            </div>
+            <div class="status-box production-resumed" id="production-resumed">
+                <div class="dot green3"></div>
+                Production
+            </div>
+            <div class="status-box changeover" id="changeover">
+                <div class="dot blue4"></div>
+                Changeover
+            </div>
+            <div class="device">
+                <img src="main-img.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+    
+    <a href="#" class="work-link">
+        How it works
+        <span class="arrow-work">›</span>
+    </a>
+ 
+    <section class="cta-bg d-flex align-items-center">
+    <div class="container">
+      <div class="cta-box row align-items-center">
+ 
+        <div class="col-lg-4 col-md-12 mb-3 mb-lg-0">
+          <h2 class="cta-title">30-day free trial</h2>
+          <p class="cta-subtitle">No financial commitment.</p>
+        </div>
+ 
+        <div class="col-lg-5 col-md-12 mb-3 mb-lg-0">
+          <p class="cta-text">
+            Start your improvement journey by trying out
+            <strong>Evocon</strong> for free in your factory.
+          </p>
+        </div>
+ 
+        <div class="col-lg-3 col-md-12 text-lg-end">
+          <button class="btn cta-btn">
+            Request free trial
+          </button>
+        </div>
+
+      </div>
+    </div>
+    </section>
+    
+    <section class="quote-section" id="quote-section">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6 quote-image">
+                <img src="queue.jpg" alt="Professional" class="img-fluid mb-3" /> 
+                <div class="office-location">
+                  <a href="https://www.google.com/maps/place/Pakistan+Spring+%26+Engineering+Company+(Pvt.)+Limited/@31.6921363,74.0503849,17.5z/data=!4m6!3m5!1s0x3918e7f2690e57ab:0xdc17bc90396a4712!8m2!3d31.6930535!4d74.0495884!16s%2Fg%2F1tf5c3v8?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                    <div class="map-container">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13616.505508826275!2d74.0495884!3d31.6930535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918e7f2690e57ab%3A0xdc17bc90396a4712!2sPakistan%20Spring%20%26%20Engineering%20Company%20(Pvt.)%20Limited!5e0!3m2!1sen!2s!4v1700000000000"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                      </iframe>
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div class="col-lg-6 quote-form">
+              <h2>
+                Get a <span>Queue</span>
+              </h2>
+
+              <p>
+                Our <strong>Smart Factory</strong> queue system organizes tasks in real time to prevent delays and bottlenecks.
+                Boost productivity with intelligent scheduling and smoother production flow.
+              </p>
+
+              <form id="quoteForm" action="db.php" method="POST">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" placeholder="Your Name*" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" placeholder="Email*" required>
+                  </div>
+                </div>
+
+                <input type="number" placeholder="Phone">
+                <textarea rows="4" placeholder="Message"></textarea>
+
+                <div class="captcha-box">
+            <label class="checkbox-wrapper">
+                <input type="checkbox" id="robotCheck">
+                    <span class="fake-checkbox"></span>
+                        I’m not a robot
+            </label>
+                <small>reCAPTCHA</small>
+        </div>
+
+            <!-- <div class="captcha-box">
+              <div class="fake-checkbox"></div>
+              <span>I’m not a robot</span>
+              <small>reCAPTCHA</small>
+            </div> -->
+
+            <button type="submit" class="send-btn">
+              SEND MESSAGE
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    </section>
+
+
+    <footer class="footer">
+  <div class="container">
+
+    <div class="row footer-top">
+
+      <div class="col-lg-3 col-md-12 mb-4">
+        <div class="footer-logo">
+            <img src="Logo_For_Smart_Factor-removebg-preview.png" alt="SmartFactory Logo" class="footer-logo-img">
+        </div>
+
+      </div>
+ 
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <h6>Highlights</h6>
+        <ul>
+          <li><a href="#">MVK Fusion</a></li>
+          <li><a class="active" href="#">IO-Link</a></li>
+          <li><a href="#">Cube67</a></li>
+          <li><a href="#">Power Connectors</a></li>
+          <li><a href="#">Network Technology</a></li>
+          <li><a href="#">Systems Engineering</a></li>
+        </ul>
+      </div>
+ 
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <h6>Company</h6>
+        <ul>
+          <li><a href="#">Corporate News</a></li>
+          <li><a href="#">Trade Shows & Events</a></li>
+          <li><a href="#">Supplier Management</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press Area</a></li>
+        </ul>
+      </div>
+ 
+      <div class="col-lg-3 col-md-12">
+        <h6>Contact</h6>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Worldwide</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Become a Sales Partner</a></li>
+        </ul>
+ 
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+
+    </div>
+ 
+    <div class="footer-bottom">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <a href="#">Imprint</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Legal</a>
+          <a href="#">Whistleblower System ↗</a>
+          <p>© 2026 Murrelektronik GmbH</p>
+        </div>
+
+        <div class="col-md-4 text-md-end">
+          <button id="toTop" class="to-top">
+            <i class="bi bi-arrow-up" ><a href="#" style="color: #00d9ff;">to top</a></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    </footer>
+  <body>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+
+</body>
+</html>
